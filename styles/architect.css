@@ -1,6 +1,20 @@
 /* work sans font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;1,800&display=swap');
 
+
+/* shared styles */
+
+.btn-primary {
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    background: #ff900e;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+
+}
+
 * {
     font-family: 'Work Sans', sans-serif;
 }
@@ -55,4 +69,33 @@ nav li a {
 
 .banner-description {
     color: #727272;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive media qureies */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max width:960px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 50px;
+    }
 }
